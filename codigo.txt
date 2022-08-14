@@ -1,0 +1,52 @@
+let btn1 = document.querySelector(".um");
+let btn2 = document.querySelector(".dois")
+let btn3 = document.querySelector(".tres")
+let btn4 = document.querySelector(".quatro")
+let btn5 = document.querySelector(".cinco")
+let btn6 = document.querySelector(".seis")
+let btn7 = document.querySelector(".sete")
+let btn8 = document.querySelector(".oito")
+let btn9 = document.querySelector(".nove")
+let audio = document.querySelector("audio");
+
+btn1.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");  
+});
+
+btn2.addEventListener("click", ()=>{
+    pausePLay("./sounds/tome.mp3");
+});
+
+btn3.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a"); 
+});
+
+btn4.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");  
+});
+
+btn5.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");   
+});
+
+btn6.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");  
+});
+
+btn7.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");   
+});
+
+btn8.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");   
+});
+
+btn9.addEventListener("click", ()=>{
+    pausePLay("./sounds/ui.m4a");
+});
+
+function pausePLay(archiveWay){
+    audio.src = archiveWay;
+    audio.pause();
+    audio.play();
+}
